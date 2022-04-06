@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".IPEdit">
+    <ImageView
+        android:id="@+id/imageViewIPEditBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textViewIPEditNewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Edit IP"
+        android:textColor="#D84315"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIPEditName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="#47F1C1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditNewIP" />
+
+    <EditText
+        android:id="@+id/editTextIPEditName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cell_border"
+        android:ems="10"
+        android:textColorHint="#A5A6AA"
+        android:hint="Name (40)"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIPEditName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditNewIP" />
+
+    <TextView
+        android:id="@+id/textViewIPEditLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Location"
+        android:textColor="#47F1C1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditName" />
+
+    <Spinner
+        android:id="@+id/spinnerIPEditLocation"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIPEditLocation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIPEditName" />
+
+    <TextView
+        android:id="@+id/textViewIPEditIP"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="IP"
+        android:textColor="#47F1C1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditLocation" />
+
+    <EditText
+        android:id="@+id/editTextIPEditIP"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cell_border"
+        android:ems="10"
+        android:textColorHint="#A5A6AA"
+        android:hint="IP (15)"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIPEditIP"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIPEditLocation" />
+
+    <TextView
+        android:id="@+id/textViewIPEditMachinetype"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Machine Type"
+        android:textColor="#47F1C1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditIP" />
+
+    <TextView
+        android:id="@+id/textViewIPEditNote"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:text="Note"
+        android:textColor="#47F1C1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIPEditMachinetype" />
+
+    <Spinner
+        android:id="@+id/spinnerIPEditMachinetype"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIPEditMachinetype"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIPEditIP" />
+
+    <EditText
+        android:id="@+id/editTextIPEditNote"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cell_border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:textColorHint="#A5A6AA"
+        android:hint="Note (255)"
+        android:textColor="#000"
+        android:inputType="textMultiLine"
+        android:maxLength="255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIPEditNote"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIPEditMachinetype" />
+
+    <ImageButton
+        android:id="@+id/imageButtonIPEditSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIPEditNote"
+        app:srcCompat="@drawable/save64ngang" />
+</androidx.constraintlayout.widget.ConstraintLayout>

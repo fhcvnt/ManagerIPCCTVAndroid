@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9D2D5"
+    tools:context=".LocationAdd">
+    <ImageButton
+        android:id="@+id/imageButtonLocationAddBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textViewLocationAddAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Add location"
+        android:textColor="#D63838"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLocationAddID"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="ID"
+        android:textColor="#283593"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationAddAddLocation" />
+
+    <EditText
+        android:id="@+id/editTextLocationAddID"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Location code (10)"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocationAddID"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationAddAddLocation" />
+
+    <TextView
+        android:id="@+id/textViewLocationAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Location"
+        android:textColor="#283593"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationAddID" />
+
+    <EditText
+        android:id="@+id/editTextLocationAddLocation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Location name (50)"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocationAddLocation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocationAddID" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocationAddLocation">
+
+        <ImageButton
+            android:id="@+id/imageButtonLocationAddSave"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            app:srcCompat="@drawable/save96" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLocationAddClose"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            app:srcCompat="@drawable/close96" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

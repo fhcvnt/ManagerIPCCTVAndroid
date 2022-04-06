@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lacty.cctv.manageripcctv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoip"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoip"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ManagerIPCCTV">
+        <activity
+            android:name="sqlite.SQLiteReport"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name="sqlite.SQLiteIPSearch"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="sqlite.SQLiteIP"
+            android:label="IP" />
+        <activity
+            android:name="sqlite.SQLiteLocation"
+            android:label="Location" />
+        <activity
+            android:name="sqlite.SQLiteMachineType"
+            android:label="Machine type" />
+        <activity
+            android:name="sqlite.SQLiteGetIP"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".FormStart"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sqlite.SQLiteMain"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".IP"
+            android:label="IP" />
+        <activity
+            android:name=".IPAdd"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".IPEdit"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".IPSearch"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Location"
+            android:label="Location" />
+        <activity
+            android:name=".LocationAdd"
+            android:label="Add location" />
+        <activity
+            android:name=".LocationEdit"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MachineType"
+            android:label="Machine type" />
+        <activity
+            android:name=".MachineTypeAdd"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MachineTypeEdit"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GetIP"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Report"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>
